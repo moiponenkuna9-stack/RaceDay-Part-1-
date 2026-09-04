@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RaceDay System Planning</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+<header>
+    <div class="nav-wrap">
+        <a class="brand" asp-controller="Home" asp-action="Index"><span class="brand-mark">R</span> RaceDay</a>
+        <nav>
+            <a asp-action="Index">Overview</a>
+            <a asp-action="Erd">Section A · ERD</a>
+            <a asp-action="Endpoints">Section B · API Plan</a>
+            <a asp-action="Sql">Section C · SQL</a>
+        </nav>
+    </div>
+</header>
+<main class="container">@RenderBody()</main>
+<footer><div class="container">PROG6212 POE · RaceDay System Planning</div></footer>
+</body>
+</html>

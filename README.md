@@ -34,4 +34,5 @@ A GitHub Actions workflow (`.github/workflows/validate-docs.yml`) runs on every 
 4. Use the navigation menu to view the Overview, Section A ERD, Section B API Endpoint Plan and Section C SQL section.
 5. To execute the database script, open `docs/RaceDay_Database.sql` in SQL Server Management Studio (SSMS) and run it against a clean SQL Server instance.
 
-The Visual Studio website is a planning presentation of the database and API design. It is not the Part 2 API implementation.
+The Visual Studio website is a planning presentation of the database and API design. 
+

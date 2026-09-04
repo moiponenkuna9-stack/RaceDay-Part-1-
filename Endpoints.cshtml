@@ -1,0 +1,5 @@
+@model List<EndpointModel>
+<div class="page-heading"><span class="section-label">SECTION B</span><h1>API Endpoint Plan</h1><p class="lead">The planned REST contract defines the HTTP method, route, purpose, required role, request body and expected response for each system endpoint.</p></div>
+<div class="table-wrap"><table class="endpoint"><thead><tr><th>HTTP Method</th><th>Route</th><th>Description</th><th>Role Required</th><th>Request Body</th><th>Expected Response</th></tr></thead><tbody>
+@foreach (var e in Model) { <tr><td><span class="method @e.Method.ToLower()">@e.Method</span></td><td><code>@e.Route</code></td><td>@e.Description</td><td><span class="role-pill">@e.Role</span></td><td>@e.Body</td><td>@e.Response</td></tr> }
+</tbody></table></div>

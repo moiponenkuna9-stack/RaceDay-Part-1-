@@ -1,0 +1,42 @@
+<div class="hero hero-home">
+    <span class="eyebrow">PROG6212 POE</span>
+    <h1>RaceDay System Planning</h1>
+    <p>The planning stage for the race event management system. This project presents the database design, REST API plan and SQL Server implementation prepared for the RaceDay system.</p>
+    <div class="hero-actions">
+        <a class="button primary" asp-action="Erd">View database design</a>
+        <a class="button secondary" asp-action="Endpoints">View API plan</a>
+    </div>
+</div>
+
+<section class="overview-grid">
+    <a class="overview-card card-erd" asp-action="Erd">
+        <div class="card-number">01</div>
+        <h2>Section A · ERD</h2>
+        <p>Seven connected entities with attributes, primary keys, foreign keys and relationship cardinalities.</p>
+        <span class="card-link">Open ERD →</span>
+    </a>
+    <a class="overview-card card-api" asp-action="Endpoints">
+        <div class="card-number">02</div>
+        <h2>Section B · API Endpoint Plan</h2>
+        <p>A complete REST contract covering authentication, profiles, events, categories, enrolments and results.</p>
+        <span class="card-link">Open API plan →</span>
+    </a>
+    <a class="overview-card card-sql" asp-action="Sql">
+        <div class="card-number">03</div>
+        <h2>Section C · SQL Database</h2>
+        <p>A SQL Server schema with constraints and realistic sample data prepared for execution in SSMS.</p>
+        <span class="card-link">Open SQL section →</span>
+    </a>
+</section>
+
+<section class="info-panel">
+    <div>
+        <span class="section-label">SYSTEM OVERVIEW</span>
+        <h2>Race-event management at a glance</h2>
+        <p>RaceDay is designed to support two main user roles: Organisers manage events, categories, enrolments and results, while Participants maintain their profiles, enrol in races and view results.</p>
+    </div>
+    <div class="role-list">
+        <div class="role"><span class="role-icon">O</span><div><strong>Organiser</strong><small>Creates and manages races and records results.</small></div></div>
+        <div class="role"><span class="role-icon">P</span><div><strong>Participant</strong><small>Registers for races and views their information.</small></div></div>
+    </div>
+</section>

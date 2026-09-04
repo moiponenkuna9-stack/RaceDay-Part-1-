@@ -30,5 +30,4 @@ This planning document defines the REST endpoints that the RaceDay system is exp
 - **Organiser:** creates and manages events, configures categories, views event enrolments and records results.
 - **Participant:** maintains a profile, views events/categories, enrols in events and cancels their own enrolments before the deadline.
 
-## Consistency rule
-Part 2 implementation should closely follow these routes. Any deliberate deviation should be documented in the project README.
+

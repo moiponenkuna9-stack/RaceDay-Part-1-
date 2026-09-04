@@ -17,11 +17,11 @@ Maintains a profile, views events and categories, enrols in available races, can
 - `docs/RaceDay_Database.sql` — SQL Server database creation, constraints and sample data.
 
 ## CI/CD
-A GitHub Actions workflow (`.github/workflows/validate-docs.yml`) runs on every push and confirms the `/docs` folder exists and contains the ERD, endpoint plan and SQL script.
+A GitHub Actions workflow (https://github.com/moiponenkuna9-stack/RaceDay-Part-1-/commit/93ac2ca67942429b0cbefb62198f04dab3e96f7f) runs on every push and confirms the `/docs` folder exists and contains the ERD, endpoint plan and SQL script.
 
 **Successful build:**
-<!-- TODO: paste a screenshot of the green Actions run here, e.g. -->
-<!-- ![CI passing](docs/ci-success.png) -->
+![Uploading Screenshot 2026-09-04 190406.png…]()
+
 
 ## Walkthrough video
 <!-- TODO: replace with your unlisted YouTube link once recorded -->

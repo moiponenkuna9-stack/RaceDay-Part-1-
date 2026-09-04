@@ -20,7 +20,8 @@ Maintains a profile, views events and categories, enrols in available races, can
 A GitHub Actions workflow (https://github.com/moiponenkuna9-stack/RaceDay-Part-1-/commit/93ac2ca67942429b0cbefb62198f04dab3e96f7f) runs on every push and confirms the `/docs` folder exists and contains the ERD, endpoint plan and SQL script.
 
 **Successful build:**
-![Uploading Screenshot 2026-09-04 190406.png…]()
+<img width="1366" height="768" alt="Screenshot 2026-09-04 190406" src="https://github.com/user-attachments/assets/611ec23c-cabf-4b50-b663-1a8dd33e6150" />
+
 
 
 ## Walkthrough video

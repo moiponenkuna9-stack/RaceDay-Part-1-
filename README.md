@@ -25,15 +25,7 @@ A GitHub Actions workflow (https://github.com/moiponenkuna9-stack/RaceDay-Part-1
 
 
 ## Walkthrough video
-<!-- TODO: replace with your unlisted YouTube link once recorded -->
-[Watch the planning walkthrough](https://youtu.be/REPLACE_ME)
-
-## Running the Visual Studio project
-1. Open `RaceDay.Part1.sln` in Visual Studio with the ASP.NET and web development workload installed.
-2. Set `RaceDay.Part1` as the startup project if necessary.
-3. Run with **F5** or **Ctrl+F5**.
-4. Use the navigation menu to view the Overview, Section A ERD, Section B API Endpoint Plan and Section C SQL section.
-5. To execute the database script, open `docs/RaceDay_Database.sql` in SQL Server Management Studio (SSMS) and run it against a clean SQL Server instance.
+https://youtu.be/hNimI0ds8eo?si=Y7wN7lY_b0c7XCzL 
 
 The Visual Studio website is a planning presentation of the database and API design. 
 

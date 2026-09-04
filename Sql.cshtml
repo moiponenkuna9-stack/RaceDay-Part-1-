@@ -1,0 +1,20 @@
+<div class="page-heading"><span class="section-label">SECTION C</span><h1>SQL Database Script</h1><p class="lead">The RaceDay SQL Server script creates the database, tables, relationships, constraints and sample records required by the data model.</p></div>
+<div class="sql-hero">
+    <div class="sql-icon">SQL</div>
+    <div><h2>RaceDay_Database.sql</h2><p>Ready to open in SQL Server Management Studio (SSMS).</p></div>
+    <a class="button primary" href="/docs/RaceDay_Database.sql" target="_blank">Open SQL script</a>
+</div>
+<div class="sql-grid">
+    <details class="feature"><summary><span>01</span><h3>Database structure</h3><p>Creates RaceDayDB and seven related entities in dependency order.</p></summary>
+        <div class="feature-detail">Tables are created in the order Users → Categories → Events → EventCategories → UserProfiles → Enrolments → Results, so every foreign key always points to a table that already exists.</div>
+    </details>
+    <details class="feature"><summary><span>02</span><h3>Constraints</h3><p>Includes primary keys, foreign keys, NOT NULL, UNIQUE, DEFAULT and CHECK constraints.</p></summary>
+        <div class="feature-detail">Every table has a primary key, and foreign keys enforce each relationship (e.g. Enrolments links to Users and to the EventCategories composite key). UNIQUE stops duplicate emails and race numbers, DEFAULT auto-fills timestamps and statuses, and CHECK validates things like registration dates and finishing positions.</div>
+    </details>
+    <details class="feature"><summary><span>03</span><h3>Sample data</h3><p>Includes 2 organisers, 2 participants, 3 events, categories, enrolments and results.</p></summary>
+        <div class="feature-detail">Just enough rows in every table to exercise each relationship: 2 organisers, 2 participants, 3 events, 3 categories, matching event/category links, 3 enrolments and 2 results.</div>
+    </details>
+    <details class="feature"><summary><span>04</span><h3>Verification</h3><p>Finishes with SELECT statements that help confirm the created data.</p></summary>
+        <div class="feature-detail">The script ends with a SELECT * against each of the seven tables, so you can confirm every insert worked before moving on.</div>
+    </details>
+</div>

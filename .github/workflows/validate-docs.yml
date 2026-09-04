@@ -1,0 +1,30 @@
+name: Validate RaceDay Planning
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check required RaceDay files
+        run: |
+          test -d docs
+          test -f docs/RaceDay_ERD.png
+          test -f docs/RaceDay_API_Endpoint_Plan.md
+          test -f docs/RaceDay_Database.sql
+          echo "All required RaceDay planning files are present."
+
+      - name: Validate project files
+        run: |
+          test -f RaceDay.Part1.sln
+          test -f RaceDay.Part1.csproj
+          test -f README.md
+          echo "RaceDay project structure is valid."

@@ -1,0 +1,16 @@
+@model List<EntityModel>
+<div class="page-heading"><span class="section-label">SECTION A</span><h1>Entity Relationship Diagram (ERD)</h1><p class="lead">The RaceDay data model contains seven entities. The SQL database script follows the same entity names, keys and relationships.</p></div>
+<div class="erd-panel"><img class="erd" src="~/erd.png" alt="RaceDay Entity Relationship Diagram" /></div>
+<h2 class="section-title">Entity dictionary</h2>
+<div class="table-wrap"><table><thead><tr><th>Entity</th><th>Purpose</th><th>Keys</th><th>Attributes</th></tr></thead><tbody>
+@foreach (var e in Model) { <tr><td><strong>@e.Name</strong></td><td>@e.Description</td><td>@string.Join(", ", e.KeyFields)</td><td>@string.Join(", ", e.Fields)</td></tr> }
+</tbody></table></div>
+<h2 class="section-title">Relationship description</h2>
+<div class="relationship-grid">
+<div><strong>Users → Events</strong><span>One organiser can create many events.</span></div>
+<div><strong>Events ↔ Categories</strong><span>Many-to-many, resolved by EventCategories.</span></div>
+<div><strong>Users → Enrolments</strong><span>One participant can have many enrolments.</span></div>
+<div><strong>EventCategories → Enrolments</strong><span>Each enrolment belongs to one event/category combination.</span></div>
+<div><strong>Enrolments → Results</strong><span>Each enrolment can have zero or one result.</span></div>
+<div><strong>Users → UserProfiles</strong><span>Each user can have at most one profile.</span></div>
+</div>
